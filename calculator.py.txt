@@ -1,0 +1,19 @@
+first = int(input('Enter your number: '))
+second = int(input('Enter your number: '))
+operation = input('What is your operation?')
+
+if operation == '+':
+    print(first+second)
+
+if operation == '-':
+    print(first - second)
+    
+if operation == '/':
+    if second != 0:
+        print(first / second)
+    else:
+        print('Делить на ноль нельзя!')
+        
+if operation == '*':
+    print(first * second)
+
