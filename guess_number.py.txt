@@ -1,0 +1,26 @@
+# Создаём рандомайзер
+import random
+secret = random.randint(1, 10) # В этой переменной будет храниться загаданное число
+
+def main():
+    while True:
+        try: #Проверяем на то, чтобы пользователь вводил исключительно числа. Иначе будет выдавать 'Enter only number!' и возвращать к началу цикла
+            number = int(input('I picked a number between 1 and 10, guess it: '))
+        except:
+            print('Enter only number!')
+            continue
+        
+        if number == secret: # Проверяем на совпадение вводимого числа и загаданного
+            print('You guess, you win!!')
+            break
+        elif number > secret:
+            print('My number is less')
+        else:
+            print('My number is greater')
+
+main()
+    
+    
+    
+
+    
